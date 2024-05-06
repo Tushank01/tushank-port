@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/fav-icon.PNG">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">{$Tushank.dev}</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Tushank Dutt</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="hero" src="./assets/hero.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">{$Tushank}</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <br>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Tushank (1).pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+      
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+      
+      <div class="ticker-wrap">
+        <div class="ticker">
+          <div class="ticker__item"><img src="./assets/Microsoft_logo.svg.png" alt="Logo 1"></div>
+          <div class="ticker__item"><img src="./assets/react-2.svg" alt="Logo 2"></div>
+          <div class="ticker__item"><img src="./assets/javascript-1.svg" alt="Logo 3"></div>
+          <div class="ticker__item"><img src="./assets/css-3.svg" alt="Logo 4"></div>
+          <div class="ticker__item"><img src="./assets/tailwind-css-2.svg" alt="Logo 4"></div>
+          <div class="ticker__item"><img src="./assets/html-1.svg" alt="Logo 4"></div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/WhatsApp Image 2024-05-07 at 03.10.54_937e6528.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 year <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors of Engineering<br />Computer Science & Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              
+As a UI/UX Designer proficient in React, JavaScript, Tailwind CSS, HTML, and CSS, I specialize in crafting visually captivating and user-friendly interfaces. With a deep understanding of design principles and front-end development, I seamlessly integrate creativity with technical prowess to deliver immersive digital experiences. Leveraging React, I develop dynamic and interactive UI components, while Tailwind CSS enables me to efficiently style and customize layouts. My expertise in JavaScript enhances user interactions, ensuring a smooth and engaging journey for every user. Grounded in HTML and CSS, I prioritize accessibility and usability, translating design concepts into responsive web experiences. With a commitment to excellence and a passion for innovation, I strive to create impactful designs that resonate with users and elevate brands.
+
+
+
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./assets/opentext.png" alt="Frontend Development Photo" class="photo-ot" />
+              </div>
+              <div class="flip-card-back">
+                <h4 >
+                  • Collaborated in the development of the OpenText’s Archive server Product. <br>
+                  • Collaborated in the comprehensive development of the product, employing
+                  advanced skills in JAVA & SQL. This involvement included crucial contributions
+                  to the architecture, functionality, and performance optimization of the
+                  OpenText Archive Server by 28%. <br>
+                  • Developed Opentext’s notification serverfront-end using React, HTML & CSS. <br>
+                  • TechStacks: Java, SQL, React, JavaScript & HTML/CSS.
+                  </h4>
+              </div>
+            </div>
+          </div>
+          <div class="details-container flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./assets/Microsoft_logo.svg.png" alt="Backend Development Photo" class="photo" />
+              </div>
+              <div class="flip-card-back">
+                <h4>
+                  • Collaborated with the Microsoft mentee. <br>
+                  • Collaborated in the comprehensive development of the product, employing
+                  advanced skills in Python development. This involvement included crucial
+                  contributions to the architecture, functionality, and performance optimization. <br>
+                  • TechStack: Python</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/whatp.PNG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ping-me</h2>
+            <div class="btn-container">
+              
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Tushank01/whatsapp-mern-clone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://whatsapp-mern-clone-devo6dz8r-tushank01s-projects.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/image to txt.PNG"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Image-gen</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Tushank01/Image-gen'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ai-text-to-image-brown.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/job.PNG"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">JobPort</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Tushank01/weekday-jobSeacrh'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">tushankqwe@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/tushank-dutt/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
